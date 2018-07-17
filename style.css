@@ -1,0 +1,36 @@
+:root{
+    --grid-size: 16;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#container{
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    display: grid;
+    grid-template: repeat(var(--grid-size), 1fr) /repeat(var(--grid-size), 1fr);
+    background-color: #2196F3;
+    /*grid-gap: 5px;
+    padding: 10px;*/
+}
+
+#container div{
+    text-align: center;
+    font-size: 30px;
+    color: rgb(238, 238, 238);
+    background-color: #0a1388d2;
+    border: 1px solid rgb(238, 238, 238);
+    height: 100%;
+    width: 100%;
+}
+.hovered{
+    background-color: #0a5688d5;
+}
+
+button{
+    width: 10em;
+    margin: 0 auto;
+}
