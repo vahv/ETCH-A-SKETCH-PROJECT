@@ -12,7 +12,7 @@ body{
     margin: 0 auto;
     display: grid;
     grid-template: repeat(var(--grid-size), 1fr) /repeat(var(--grid-size), 1fr);
-    background-color: #2196F3;
+    background-color: white;
     /*grid-gap: 5px;
     padding: 10px;*/
 }
@@ -21,13 +21,10 @@ body{
     text-align: center;
     font-size: 30px;
     color: rgb(238, 238, 238);
-    background-color: #0a1388d2;
-    border: 1px solid rgb(238, 238, 238);
+    background-color: white;
+    border: 1px solid black;
     height: 100%;
     width: 100%;
-}
-.hovered{
-    background-color: #0a5688d5;
 }
 
 button{
