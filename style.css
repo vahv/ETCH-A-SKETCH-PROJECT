@@ -7,6 +7,16 @@ body{
     justify-content: center;
     background-image: url("https://wallpapertag.com/wallpaper/full/b/a/3/267747-popular-background-images-2560x1600-for-mac.jpg");
 }
+.banner{
+    font-family: 'Lobster', cursive;
+    font-size: 3em;
+    text-align: center;
+    color: rgb(19, 186, 252);
+    background-color: azure;
+    margin: 0 auto 20px auto;
+    width: 500px;
+    border-radius: 5px;
+}
 #container{
     width: 500px;
     height: 500px;
@@ -27,8 +37,21 @@ body{
     height: 100%;
     width: 100%;
 }
-
-button{
+#editButton{
     width: 10em;
-    margin: 0 auto;
+    margin: 10px auto;
+    background-color: rgb(19, 100, 252);
+    font-size: 1.2em;
+    color: azure;
+    padding: 10px;
+    border: 1px solid rgb(19, 100, 252);
+}
+#editButton:hover{ 
+    cursor: pointer;
+    background-color: rgb(56, 125, 255);
+    border-color: rgb(56, 125, 255);
+}
+#editButton:active{
+    background-color: rgb(19, 186, 252);
+    border-color:rgb(19, 186, 252);
 }
