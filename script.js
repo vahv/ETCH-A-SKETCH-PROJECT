@@ -1,13 +1,13 @@
 createGridElements(16, document.querySelector('#container'));
 
 function createGridElements(gridDimension, container){
-
-    for(let i = 0; i < gridDimension*gridDimension; i++){
+    const gridArea = gridDimension*gridDimension;
+   
+    for(let i = 0; i < gridArea; i++){
         const div = document.createElement('div');
+        div.addEventListener('mouseover',changeBackground);
         container.appendChild(div);
     }
-    const divs = document.querySelectorAll('#container>div');
-    divs.forEach(div => div.addEventListener('mouseover',changeBackground));
 }
 
 
@@ -34,12 +34,15 @@ function changeBackground(){
 
 function changeGridlayout(){
     const gridDimension = prompt('How many squares per side?');
-    const gidContainer = document.querySelector('#container')
-    if(gridDimension != ""){
+    
+    if(Number.isInteger(+gridDimension) && gridDimension > 0){
+        const gridContainer = document.querySelector('#container')
         setGridLayout(gridDimension);
-        deleteGridElements(gidContainer);
+        deleteGridElements(gridContainer);
         createGridElements(gridDimension,gidContainer);
     }
+    else if (!gridDimension) return;
+    else alert('Please enter an integer number greater than zero');
 }
 
 function deleteGridElements(gridContainer){
