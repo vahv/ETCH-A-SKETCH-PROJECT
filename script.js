@@ -39,7 +39,7 @@ function changeGridlayout(){
         const gridContainer = document.querySelector('#container')
         setGridLayout(gridDimension);
         deleteGridElements(gridContainer);
-        createGridElements(gridDimension,gidContainer);
+        createGridElements(gridDimension,gridContainer);
     }
     else if (!gridDimension) return;
     else alert('Please enter an integer number greater than zero');

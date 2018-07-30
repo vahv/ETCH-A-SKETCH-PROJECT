@@ -5,6 +5,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-image: url("https://wallpapertag.com/wallpaper/full/b/a/3/267747-popular-background-images-2560x1600-for-mac.jpg");
 }
 #container{
     width: 500px;
